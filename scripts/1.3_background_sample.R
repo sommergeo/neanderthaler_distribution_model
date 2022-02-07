@@ -77,7 +77,7 @@ tiff("./work/sample/background_sample_validation/background_sample_strategy.tiff
 plt_sample2
 dev.off()
 
-tiff("./work/sample/background_sample_validation/background_sample_validation.tiff", units="cm", width=18.3, height=18, res=600)
+tiff("./results/fig_background_sample_validation.tiff", units="cm", width=18.3, height=18, res=600)
 plot_grid(plt_sample_error,plt_sample2, labels = c('a','b'), rel_widths = c(1,0.65), align='h')
 dev.off()
 
