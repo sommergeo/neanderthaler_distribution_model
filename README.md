@@ -1,13 +1,17 @@
 # Neanderthaler Distribution Model
 DOI TBA
 
-## Summary
  This analyis circumscribes the ecological niche of Neanderthals between 560.000 and 360.000 years ago (MIS 11–14) in Europe. We informed the MaxEnt algorithm with archaeological presence data and paleoenvironmental reconstructions to calculate habitat suitability and derive the spatial range of the habitat. It is part of a study to estimate the prehistoric population density based on the environmental baseline of modern Hunter-Gatherers:
  > TBA
 
 ## Content
- The repository contains the R Project `neanderthaler_distribution_model.Rproj` and four folders: `data` for input data, `work` for intermediate data and `results` for the outputs of our model and figures to be used in the publication. The most important folder is `scripts` with all the reproducible R code. The only dataset, that is not included is the Oscillayer dataset (see References) and must be added manually.
-
+ The repository contains the R Project `neanderthaler_distribution_model.Rproj` and four folders. The only dataset, that is not included is the Oscillayer dataset (see References) and must be added manually.
+ ├── `data` for input data
+ │   ├──
+ ├── `work` for intermediate results
+ ├── `results` for the outputs of our model and figures used in the publication
+ ├──`scripts` is the most important folder with all the reproducible R code. 
+ │   ├──
  
 ## References
  We used the following datasets:
