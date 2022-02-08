@@ -5,17 +5,18 @@ This analyis circumscribes the ecological niche of Neanderthals between 560.000 
 > TBA
 
 ## Content
-The repository contains the R Project `neanderthaler_distribution_model.Rproj` and four folders.
-  
-`data` contains the input data consisting of the dated archaeological sites (`Sites MIS11-MIS14.xlsx`), the study area (`study_area.shp`) and the segementation of the timespan into 11 slces (`timeslices.xlsx`).
- 
-`work` contains intermediate results including data preprocessing (`oscillayer`, `npp`, `elevation`, `covariates`), selection of environmental data (`correlation`) and presence/background sample (`sample`), the selection of a suitable model (`maxent_model_selection`), the inference of the habitat suitability (`maxent_model_prediction`) and a binary classfication of the area suitable for Neanderthals (`maxent_model_classification`).
- 
-`results` includes figures used in the publication and a validation of the model.
- 
-`scripts` contains all the reproducible R scripts. The preprocessing procedure comprises the subsetting and reprojecting the Oscillayer dataset (`0.1_elevation.R`, `0.2_oscillayer.R`, `0.3_npp.R`, `0.4_reproject_and_align_rasters.R`). The model is informed with a presence sample (`1.1_presence_sample.R`) and an evaluated background sample (`1.3_background_sample`). We chose the 6 most informative covariates from the 19 Bioclim variables (`1.2_covariate_reduction.R`). With these data, we ran multiple MaxEnt models with different tuning parameters and seleceted the most suitable (`2.1_maxent_model_selection.R`). The selected was used to infer the habitat suitabiltiy of Neanderthals (`2.2_maxent_model_prediciton.R`). Based on the suitability we derived a binary classification to circumscribe the area potentially covered by Neanderthals in this region (`2.3_maxent_model_classification.R`).
+The repository contains the R Project `neanderthaler_distribution_model.Rproj` and four folders. The Oscillayer dataset is missing due to its size and must be added manually (see References). 
 
- The Oscillayer dataset is missing due to its size and must be added manually (see References). 
+`Scripts` contains all the reproducible R scripts. The preprocessing procedure comprises the subsetting and reprojecting the Oscillayer dataset (`0.1_elevation.R`, `0.2_oscillayer.R`, `0.3_npp.R`, `0.4_reproject_and_align_rasters.R`). The model is informed with a presence sample (`1.1_presence_sample.R`) and an evaluated background sample (`1.3_background_sample`). We chose the 6 most informative covariates from the 19 Bioclim variables (`1.2_covariate_reduction.R`). With these data, we ran multiple MaxEnt models with different tuning parameters and seleceted the most suitable (`2.1_maxent_model_selection.R`). The selected was used to infer the habitat suitabiltiy of Neanderthals (`2.2_maxent_model_prediciton.R`). Based on the suitability we derived a binary classification to circumscribe the area potentially covered by Neanderthals in this region (`2.3_maxent_model_classification.R`).
+  
+`Data` contains the input data consisting of the dated archaeological sites (`Sites MIS11-MIS14.xlsx`), the study area (`study_area.shp`) and the segementation of the timespan into 11 slces (`timeslices.xlsx`).
+ 
+`Work` contains intermediate results including data preprocessing (`oscillayer`, `npp`, `elevation`, `covariates`), selection of environmental data (`correlation`) and presence/background sample (`sample`), the selection of a suitable model (`maxent_model_selection`), the inference of the habitat suitability (`maxent_model_prediction`) and a binary classfication of the area suitable for Neanderthals (`maxent_model_classification`).
+ 
+`Results` includes figures used in the publication and a validation of the model.
+ 
+
+
 ```
  . neanderthaler_distribution_model.Rproj
  ├── data
