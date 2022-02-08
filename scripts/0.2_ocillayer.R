@@ -3,11 +3,9 @@ library(dplyr)
 
 
 # Variables
-setwd('C:/cs/mid-pleistocene_niches/work')
-
-path <- 'C:/cs/geodata/Oscillayers'
-studyarea <- shapefile('../work/study_area.shp')
-targetdir = paste(getwd(),'oscillayer', sep='/')
+path <- 'C:/cs/geodata/Oscillayers' # set path to oscillayer dataset
+studyarea <- shapefile('./data/study_area.shp')
+targetdir = paste(getwd(),'work/oscillayer', sep='/')
 
 # Export
 ## Function to open zip files, extract filp, clip AOI and save to drive
@@ -47,7 +45,7 @@ for(zip in ziplist){
 }
 
 # Aggregate to specified time-slices
-setwd('C:/cs/mid-pleistocene_niches/work/oscillayer')
+setwd('./work/oscillayer')
 for(prefix in paste('bio', seq(1,19,1), sep='')){
   print(prefix)
   brick(list(paste(prefix, '_t37.tif', sep=''), paste(prefix, '_t38.tif', sep=''))) %>% mean() %>% writeRaster(filename=paste(prefix,'_MIS11ab',sep=''), format="GTiff", overwrite=TRUE)
