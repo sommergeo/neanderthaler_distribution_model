@@ -6,13 +6,47 @@ DOI TBA
 
 ## Content
  The repository contains the R Project `neanderthaler_distribution_model.Rproj` and four folders. The only dataset, that is not included is the Oscillayer dataset (see References) and must be added manually.
- ├── `data` for input data
- │   ├──
- ├── `work` for intermediate results
- ├── `results` for the outputs of our model and figures used in the publication
- ├──`scripts` is the most important folder with all the reproducible R code. 
- │   ├──
+```
+ . neanderthaler_distribution_model.Rproj
+ ├── data
+ │   ├── Sites MIS11-MIS14.xlsx
+ │   ├── study_area.shp
+ │   └── timeslices.xlsx
+ ├── work
+ │   ├── oscillayer
+ │   ├── npp
+ │   ├── elevation
+ │   ├── covariates
+ │   ├── correlation
+ │   ├── sample
+ │   │   └── background_sample_validation
+ │   ├── maxent_model_selection
+ │   ├── maxent_model_prediction
+ │   └── maxent_model_classification
+ ├── results
+ │   ├── fig_background_sample_validation.tiff
+ │   ├── fig_model_evaluation.tiff
+ │   ├── fig_model_performance
+ │   ├── fig_model_results
+ │   ├── fig_cumulative_habitats
+ │   ├── fig_population_density
+ │   └── validation
+ └── scripts
+     ├── 0.1_elevation.R
+     ├── 0.2_oscillayer.R
+     ├── 0.3_npp.R
+     ├── 0.4_reproject_and_align_rasters.R
+     ├── 1.1_presence_sample.R
+     ├── 1.2_covariate_reduction.R
+     ├── 1.3_background_sample.R
+     ├── 2.1_maxent_model_selection.R
+     ├── 2.2_maxent_model_prediciton.R
+     ├── 2.3_maxent_model_classification.R
+     └── 2.4_fig_model_performance.R
  
+ 
+ 
+ ```
 ## References
  We used the following datasets:
  * Rodríguez, J., Willmes, C., & Mateos, A. (2021). Shivering in the Pleistocene. Human adaptations to cold exposure in Western Europe from MIS 14 to MIS 11. Journal of Human Evolution, 153, 102966. https://doi.org/10.1016/j.jhevol.2021.102966
