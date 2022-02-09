@@ -1,4 +1,3 @@
-#library(dplyr)
 library(tidyverse)
 library(dismo)
 options(java.parameters = "-Xmx20g" )
@@ -83,3 +82,5 @@ plot(evalplot)
 tiff("./results/fig_model_evaluation.tiff", units="cm", width=19, height=6, res=600)
 evalplot
 dev.off()
+
+ggsave("./results/fig_model_evaluation.eps", units="cm", width=18.3, height=6, dpi=600)
