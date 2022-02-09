@@ -3,7 +3,7 @@
     "path": "C:/cs/neanderthaler_distribution_model/scripts/2.4_fig_model_performance.R",
     "project_path": "scripts/2.4_fig_model_performance.R",
     "type": "r_source",
-    "hash": "3308636432",
+    "hash": "1020787578",
     "contents": "",
     "dirty": false,
     "created": 1644408017764.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "36,20",
-        "scrollLine": "20"
+        "cursorPosition": "52,42",
+        "scrollLine": "44"
     },
     "folds": "",
-    "lastKnownWriteTime": 1644412416,
+    "lastKnownWriteTime": 1644420246,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1644412417007,
+    "last_content_update": 1644420246258,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,0 +1,26 @@
+{
+    "id": "5F8A5B72",
+    "path": "C:/cs/neanderthaler_distribution_model/scripts/2.1_maxent_model_selection.R",
+    "project_path": "scripts/2.1_maxent_model_selection.R",
+    "type": "r_source",
+    "hash": "1018423232",
+    "contents": "",
+    "dirty": false,
+    "created": 1644418124108.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "86,0",
+        "scrollLine": "57"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1644407459,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1644407459,
+    "read_only": false,
+    "read_only_alternatives": []
+}

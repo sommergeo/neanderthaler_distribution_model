@@ -14,7 +14,8 @@ model_data$feature <- model_data$feature  %>% recode_factor(bio12='BIO12',bio15=
 plt_dens <- ggplot(data=model_data, aes(x=value, fill=type))+
   geom_density(alpha=0.6)+
   facet_wrap(.~feature, scales='free', nrow=1)+
-  scale_fill_manual(values=c('grey','red'))+
+  scale_fill_manual(limits=c('Presence','Background'),
+                    values=c('red','grey'))+
   labs(x='', y="Density", fill='')+
   theme_cowplot(font_size = 7, font_family = 'sans')+
   theme(text = element_text(size = 7, family='sans'),
@@ -34,12 +35,15 @@ plt_feature_importance <- ggplot(data=feature_importance, aes(x=feature, y=value
   geom_bar(stat='identity', position=position_dodge())+
   geom_text(aes(label=round(value)), vjust=0.5, hjust=1.1, color="black",
             position = position_dodge(0.9), size=2)+
-  scale_fill_manual(values=c('#eab676','#76b5c5'))+
+  scale_fill_manual(limits=c('permutation importance','contribution'),
+                    labels=c('Permutation importance','Contribution'),
+                    values=c('#76b5c5','#eab676'))+
   labs(x='Feature', y="Percentage", fill='Measure')+
   scale_x_discrete(limits = rev(levels(feature_importance$feature)))+
   coord_flip()+
   theme_cowplot(font_size = 7, font_family = 'sans')+
   theme(text = element_text(size = 7, family='sans'))
+
 
 plot(plt_feature_importance)
 
@@ -55,16 +59,13 @@ tiff("./results/fig_model_performance/fig_model_performance.tiff", units="cm", w
 plot_grid(plt_dens, bottom_row, labels = c('a', ''), label_size = 7, ncol = 1, rel_heights = c(0.75,1))
 dev.off()
 
-
-
 # Scatterplot (B) to be added with a graphics program
 library(plot3D)
 presence_points <- maxent_model@presence
 absence_points <- maxent_model@absence
 
-tiff("fig_3dscatter.tiff", units="cm", width=7.32, height=5.71, res=600, pointsize=7)
-#svg("fig_3dscatter.svg", width=7.32, height=5.71, pointsize=7)
-#tiff("fig_3dscatter.tiff", units="px", width=1729, height=1181, pointsize = 7, res=600)
+tiff("./results/fig_model_performance/fig_3dscatter.tiff", units="cm", width=7.32, height=5.71, res=600, pointsize=7)
+svg("./results/fig_model_performance/fig_3dscatter.svg", width=7.32, height=5.71, pointsize=7)
 par(mar = c(0, 0, 0, 0))
 plt_scatter <- scatter3D(x=absence_points$bio12, y=absence_points$bio15, z=absence_points$bio1,
                          col = 'black',
