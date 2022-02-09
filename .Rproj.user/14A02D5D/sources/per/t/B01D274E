@@ -1,0 +1,26 @@
+{
+    "id": "B01D274E",
+    "path": "C:/data/roceeh/mp_niches/neanderthaler_distribution_model/scripts/1.3_background_sample.R",
+    "project_path": "scripts/1.3_background_sample.R",
+    "type": "r_source",
+    "hash": "2905374820",
+    "contents": "",
+    "dirty": false,
+    "created": 1644426600902.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "87,0",
+        "scrollLine": "59"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1644427542,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1644427542006,
+    "read_only": false,
+    "read_only_alternatives": []
+}

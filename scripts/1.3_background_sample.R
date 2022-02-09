@@ -49,9 +49,9 @@ sample_2.random <- d2 %>% sample_n(10000)
 sample_2.stratified <- bind_rows('MIS11ab'= d2 %>% filter(interval=="MIS11ab") %>% sample_n(12/30*10000),
                                  'MIS11c'= d2 %>% filter(interval=="MIS11c") %>% sample_n(10/30*10000),
                                  'MIS11de'= d2 %>% filter(interval=="MIS11de") %>% sample_n(1/30*10000),
-                                 'MIS12a'= d2 %>% filter(interval=="MIS12a") %>% sample_n(3/30*10000),
-                                 'MIS12b'= d2 %>% filter(interval=="MIS12b") %>% sample_n(2/30*10000),
-                                 'MIS12c'= d2 %>% filter(interval=="MIS12c") %>% sample_n(2/30*10000),
+                                 'MIS12a'= d2 %>% filter(interval=="MIS12a") %>% sample_n(1.5/30*10000),
+                                 'MIS12b'= d2 %>% filter(interval=="MIS12b") %>% sample_n(1/30*10000),
+                                 'MIS12c'= d2 %>% filter(interval=="MIS12c") %>% sample_n(1.5/30*10000),
                                  'MIS13a'= d2 %>% filter(interval=="MIS13a") %>% sample_n(1/30*10000),
                                  #'MIS13b'= d2 %>% filter(interval=="MIS13b") %>% sample_n(0/30*10000),
                                  'MIS13c'= d2 %>% filter(interval=="MIS13c") %>% sample_n(1/30*10000),
@@ -81,6 +81,7 @@ tiff("./results/fig_background_sample_validation.tiff", units="cm", width=18.3, 
 plot_grid(plt_sample_error,plt_sample2, labels = c('a','b'), rel_widths = c(1,0.65), align='h')
 dev.off()
 
+ggsave("./results/fig_background_sample_validation.eps", units="cm", width=18.3, height=18, dpi=600)
 
 
 
