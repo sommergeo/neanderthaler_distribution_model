@@ -1,5 +1,5 @@
 # Neanderthaler Distribution Model
-DOI TBA
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6045917.svg)](https://doi.org/10.5281/zenodo.6045917)
 
 This analyis circumscribes the ecological niche of Neanderthals between 560.000 and 360.000 years ago (MIS 11–14) in Europe. We informed the MaxEnt algorithm with archaeological presence data and paleoenvironmental reconstructions to calculate habitat suitability and derive the spatial range of the habitat. It is part of a study to estimate the prehistoric population density based on the environmental baseline of modern Hunter-Gatherers:
 > TBA
@@ -79,6 +79,6 @@ We used the following software:
  
 ## Citation 
 
-This work is available under the following DOI und published under the TBA license.
-> TBA
+This work is available under the following DOI und published under the CC BY 4.0 license.
+> Rodríguez, Jesús, Sommer, Christian, Willmes, Christian, & Mateos, Ana. (2022). Data and code for "Sustainable Human Population Density in Western Europe between 560.000 and 360.000 years ago" [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6045917
 
